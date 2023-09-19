@@ -1,6 +1,7 @@
 package com.examples.demo.models.entity;
 
 import java.io.Serializable;
+import java.lang.reflect.Array;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -36,4 +37,5 @@ public class Computadora implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     private Date created_at;
 
+   
 }

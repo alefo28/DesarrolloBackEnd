@@ -8,6 +8,7 @@ public interface ComputadoraService {
 
     /**
      * Este Metodo Retorna todo un Listado de computadoras
+     * 
      * @return
      **/
 
@@ -15,7 +16,9 @@ public interface ComputadoraService {
 
     public Computadora findById(Long id);
 
-    //post
-    //put
+    // post
+    public Computadora setComputadora(String name, String marca);
 
+    // put
+    public Computadora save(Computadora updateComputadora);
 }

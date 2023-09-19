@@ -27,7 +27,19 @@ public class ComputadoraServiceImpl implements ComputadoraService {
         return computadoraDao.findById(id).orElse(null);
     }
 
-    //post
-    //put
+    // post
+    @Override
+    @Transactional(readOnly = true)
+    public Computadora setComputadora(String name, String marca) {
+
+        return ComputadoraDao.setComputadora(name, marca);
+    }
+
+    // put
+    @Override
+    @Transactional(readOnly = true)
+    public Computadora save(Computadora updateComputadora) {
+        return computadoraDao.save(updateComputadora);
+    }
 
 }
